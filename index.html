@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <main>
+        <nav >
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="ri-close-large-line"></i></a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">store</a></li>
+            <li><a href="#">Pay</a></li>
+        </ul>
+            
+        </nav>
+
+
+        <nav>
+        <ul class="navbar">
+            <li id="heading"><h2>MessiMagician</h2></li>
+            <li class="hideonMobile"><a href="#">Home</a></li>
+            <li class="hideonMobile"><a href="#">About us</a></li>
+            <li class="hideonMobile"><a href="#">Contact us</a></li>
+            <li class="hideonMobile"><a href="#">Store</a></li>
+            <li class="hideonMobile"><a href="#">Apply</a></li>
+            <li class="hideonMobile"><a href="#">pay</a></li>
+            <li  class="hideonMobile" id="hamburger" onclick=Showsidebar()><i class="ri-menu-line"></i></li>
+        </ul>
+    </nav>
+</main>
+    <script>
+        function Showsidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display='flex'
+        }
+
+        function hideSidebar(){
+           const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display='none'  
+        }
+    </script>
+</body>
+</html>
