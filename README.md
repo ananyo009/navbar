@@ -1,2 +1,1 @@
-# navbar
-https://batakop09.github.io/navbar/
+https://ananyo009.github.io/navbar/
